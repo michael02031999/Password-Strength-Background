@@ -1,0 +1,95 @@
+:root {
+  --filter-blue-radius: blur(100px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body:before {
+  background-image: url("/Users/michaelgalan/Desktop/SUMMER2022/PasswordStrengthBackground/Image/508211.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /*  filter: blur(15px); */
+  height: 100vh;
+  width: 100vw;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  filter: var(--filter-blue-radius);
+}
+
+body {
+  height: 100vh;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#container {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+}
+
+#title {
+  margin-top: 35px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+#subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+
+#formContainer {
+  display: block;
+  margin: 0 auto;
+
+  width: 80%;
+  height: 225px;
+}
+
+#email,
+#password {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+#emailInput,
+#passwordInput {
+  width: 100%;
+  border-radius: 5px;
+  height: 42.5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(226, 232, 240);
+  margin-bottom: 15px;
+}
+
+#submit {
+  width: 100%;
+  height: 42.5px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 15px;
+}
